@@ -9,7 +9,7 @@ values are used for readability as well higher information density.
 
 In a Hex value the Regex would look something like: 
 
-/^#?([a-f0-9]{6}|[a-f0-9]{3})$/ 
+`/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`
 
 We will explore the deatils of the anchors, quantifiers, OR Operator, Character classes, Grouping and Capturing, Bracket Expressions as well as Greedy and Lazy Match. 
 
@@ -26,9 +26,25 @@ We will explore the deatils of the anchors, quantifiers, OR Operator, Character 
 ## Regex Components
 
 ### Anchors
+2 types of anchors used: 
+`^` & `$` 
+
+Assertions come as anchors which allows you to match text without including it in the match result. The anchors can be used together within a regex to match specific group of characters on a single input line. 
+
+`^` indicates the beginning of the string or line while `$` matches the end of a line. `#` represents the hexadecimal colour code that must start with a # symbol. 
+
+For example: `^[a-z]$` matches the beginning and end of the expression to letters only. 
 
 ### Quantifiers
+2 types of quantifiers: 
+`?` & `{n}`
 
+Quantifiers allow for flexibility in matching since it defines the number of times a character, pattern or group appears in the regex match. By default quantifiers are greedy in the sense they will try to match as many characters as they could. 
+
+
+`?` matches zero or one preceding character while `{n}` creates a specific numerical quantifier range. 
+
+For example: 
 ### OR Operator
 
 ### Character Classes
